@@ -1,0 +1,142 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    color: #e5d200;
+    background-color: #360000;
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 60px;
+}
+
+.produits {
+    border: 0px solid;
+    border-radius: 12px;
+    background: linear-gradient(rgb(133, 0, 0), rgb(81, 0, 0));
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+}
+.produits span {
+    font-size: 23px;
+}
+
+.container {
+    position: relative;
+}
+
+.produits::after {
+    content: "Promotion !";
+    position: absolute;
+    bottom: 0;
+    width: 128px;
+    background-color: rgba(96, 0, 0, 0.5);
+    color: #e5d200;
+    text-shadow: 0 0 12px #e5d200;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transform: rotate(-10deg);
+    animation: bright 1s infinite;
+}
+@keyframes bright {
+    0%{
+        text-shadow: 0 0 12px #e5d200;
+        font-size: 20px;
+    }
+    10%{
+        font-size: 21px;
+    }
+    20%{
+        font-size: 22px;
+    }
+    25%{
+        text-shadow: 0 0 14px #e5d200;
+    }
+    30%{
+        font-size: 23px;
+    }
+    40%{
+        font-size: 24px;
+    }
+    50%{
+        text-shadow: 0 0 15px #e5d200;
+        font-size: 25px;
+    }
+    60%{
+        font-size: 24px;
+    }
+    70%{
+        font-size: 23px;
+    }
+    75%{
+        text-shadow: 0 0 14px #e5d200;
+    }
+    80%{
+        font-size: 22px;
+    }
+    90%{
+        font-size: 21px;
+    }
+    100%{
+        text-shadow: 0 0 13px #e5d200;
+        font-size: 20px;
+    }
+}
+
+
+#prixD {
+    text-decoration: line-through;
+}
+
+#prixA {
+    text-decoration: underline;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0 solid transparent;
+    border-radius: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+h1 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #e5d200;
+}
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-top: 5px solid #500000;
+    border-left: 3px solid #500000;
+    border-right: 3px solid #500000;
+    border-bottom: 2px solid #500000;
+    border-radius: 30px;
+    bottom: 0;
+    background-color: #360000;
+    padding: 10px;
+}
+
+footer img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+#footer_text {
+    margin: 0;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #e5d200;
+}
